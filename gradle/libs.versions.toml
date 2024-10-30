@@ -11,9 +11,11 @@ activity = "1.9.1"
 constraintlayout = "2.1.4"
 
 ksp = "1.9.10-1.0.13"
+rules = "1.6.1"
 runner = "1.2.0"
 lifecycleVersion = "2.6.2"
 room = "2.6.0"
+runnerVersion = "1.6.2"
 workKtx = "2.8.1"
 preferenceKtx = "1.2.1"
 paging3Ktx = "3.3.2"
@@ -21,7 +23,10 @@ testOrchestrator = "1.4.2"
 kaspresso = "1.5.3"
 
 [libraries]
+androidx-core = { module = "androidx.test:core", version.ref = "rules" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-rules = { module = "androidx.test:rules", version.ref = "rules" }
+androidx-runner-v162 = { module = "androidx.test:runner", version.ref = "runnerVersion" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }

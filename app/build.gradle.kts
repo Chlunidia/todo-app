@@ -71,4 +71,17 @@ dependencies {
 
     androidTestUtil(libs.androidx.test.orchestrator)
     androidTestImplementation(libs.kaspresso)
+
+    // Espresso UI testing dependencies
+    androidTestImplementation(libs.androidx.espresso.core)
+    androidTestImplementation(libs.androidx.espresso.intents)
+
+    // JUnit for testing
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.rules)
+
+    // Core testing dependencies
+    androidTestImplementation(libs.androidx.core)
+    androidTestImplementation(libs.androidx.runner.v162)
+
 }
